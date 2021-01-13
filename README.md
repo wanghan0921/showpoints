@@ -41,7 +41,9 @@ code ../ 用vscode打开
 
 ### 8. express
 
-### 9.body-parser 中间件 ， 获取post请求传过来的数据
+### 9.body-parser 中间件 ， 获取post请求传过来的数据-文本
+
+### 10.multer 获取post请求传过来的文件 - fromData
 
 
 
