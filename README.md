@@ -41,7 +41,7 @@ code ../ 用vscode打开
 
 ### 8. express
 
-
+### 9.body-parser 中间件 ， 获取post请求传过来的数据
 
 
 
