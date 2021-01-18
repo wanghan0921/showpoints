@@ -66,6 +66,10 @@ const div = `<div class="main"><span>1111</span></div>`
 this.ui.insertAdjacentHTML('beforeend', div)
 ```
   
+  
+### 10. middleware 中间件
+
+在请求和响应之间， 执行的回调函数
 
 
 
