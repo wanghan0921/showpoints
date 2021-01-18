@@ -46,7 +46,7 @@ code ../ 用vscode打开
 ### 10.multer 获取post请求传过来的文件 - fromData
 
 
-### 9. insertAdjiacentHtml()
+### 9. insertAdjacentHTML()
 [文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/insertAdjacentHTML)
 
 需求: 新增元素
@@ -57,13 +57,13 @@ code ../ 用vscode打开
  
 高级一点的做法:
 
-  利用inserAdjiacentHtml()可以直接把字符串格式的元素添加到父元素中
+  利用insertAdjacentHTML()可以直接把字符串格式的元素添加到父元素中
   
 ```js
 const div = `<div class="main"><span>1111</span></div>`
 
 // beforeend 是插入的位置, 有四个可选项
-this.ui.inserAdjiacentHtml('beforeend', div)
+this.ui.insertAdjacentHTML('beforeend', div)
 ```
   
 
