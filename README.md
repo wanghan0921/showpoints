@@ -82,6 +82,43 @@ this.ui.insertAdjacentHTML('beforeend', div)
 阻止冒泡
 
 
+### 13. 双击 ondblclick()
+
+### 14. 禁止选中文字
+
+```js
+window.getSelection ? window.getSelection().removerAllRanges() : document.selection.empty()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
