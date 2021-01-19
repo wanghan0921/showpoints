@@ -72,9 +72,14 @@ this.ui.insertAdjacentHTML('beforeend', div)
 在请求和响应之间， 执行的回调函数
 
 
+### 11. Uncaught (in promise)
+
+解决 : 跨域问题
 
 
+### 12. stopPropagation()
 
+阻止冒泡
 
 
 
