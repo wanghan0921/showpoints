@@ -101,6 +101,15 @@ console.log(new_str)   // wanghan
 ```
 
 
+### 16. Object.keys() 用于获取对象的所有的属性
+
+```js
+object.keys(obj)
+```
+
++ 效果类似与for...in
++ 返回一个由属性名组成的数组
+
 
 
 
