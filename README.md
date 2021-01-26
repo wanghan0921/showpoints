@@ -112,7 +112,17 @@ object.keys(obj)
 
 
 
+### 17. Object.defindProperty() 定义新属性或修改原有的属性
 
+```js
+Object.defindProperty(obj, prop, des)
+```
+
+des说明： 以对象形式{}书写
+ + value: 设置属性的值， 默认为undefined
+ + writable: 设置属性的值是否可以重写（修改）。 默认为false
+ + enumerable: 设置属性是否可以被枚举 （简单来说就是是否可以遍历获取） ， 默认为false
+ + configurable: 目标属性是否可以被删除或是否可以再次修改其特性， 默认为false
 
 
 
