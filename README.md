@@ -91,6 +91,15 @@ window.getSelection ? window.getSelection().removerAllRanges() : document.select
 ```
 
 
+### 15. string.trim() 去除字符串两侧的空格
+
+```js
+
+let str = '  wanghan   '
+let new_str = str.trim()
+console.log(new_str)   // wanghan
+```
+
 
 
 
