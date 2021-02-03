@@ -41,6 +41,33 @@
     2. 回滚此次提交出现了问题
     
     
+#### 问题2是怎么出现的？？
+ 
+  1. 我把origin-root合并到origin-master上了， 那么我master上就有许多待合并的commit，这里可以理解成几个commit组成一个父级
+  2. 我把父级中的某一个commit合并到root-master上， 所以这个一个大的commit，那么最后我自然不能回滚这次提交中的某一个提交了
+  
+  
+ #### 那么，在我看来相对正确的git协作流程是
+ 
+  1. root和origin都有develop , testing , master三条分支
+  2. 开发在develop修改， 每一次commit都有一个版本号，用`git cherry-pick qwe12iheio12ex1`的方法合并到test， 依次上master
+  3. 其次修复bug也是在develop的环境修改（可以新拉一个基于develop的分支），这样逐级合并到主线上，因为规范是从develop -> master
+  4. 这样的好处是a.避免了不必要的代码冲突， b.不用从上至下的合并代码 ， c. 可以提交某一次代码到主线上
+  
+  
+ #### git使用的几个小妙招
+ 
+  1. 当我们的某一个分支实在乱到我们无从下手时， 我们可以基于root的某一条分支拉取下来， 然后再强推到origin上， 这样保证主线和我们自己的仓库是一致的
+  
+    ```
+    // 本地新建一个分支develop，并切换到新建的分支develop，并且建立develop与远程分支root/develop的跟踪关系。
+    git checkout -b develop root/develop 
+    
+    // 用本地分支覆盖仓库的分支
+    git push -f origin develop
+    ```
+  
+    
     
     
     
